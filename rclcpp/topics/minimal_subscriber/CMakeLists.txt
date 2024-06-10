@@ -12,14 +12,20 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+include_directories(${trajectory_msgs_INCLUDE_DIRS})
+include_directories(${sensor_msgs_INCLUDE_DIRS})
 find_package(rclcpp_components REQUIRED)
 find_package(std_msgs REQUIRED)
 
 add_executable(subscriber_lambda lambda.cpp)
 ament_target_dependencies(subscriber_lambda rclcpp std_msgs)
 
-add_executable(subscriber_member_function member_function.cpp)
-ament_target_dependencies(subscriber_member_function rclcpp std_msgs)
+add_executable(subscriber_member_function ecat_data_buffer.c member_function.cpp )
+ament_target_dependencies(subscriber_member_function rclcpp std_msgs trajectory_msgs sensor_msgs)
+
+#target_compile_features(subscriber_member_function PUBLIC cxx_std_14)
 
 add_executable(subscriber_member_function_with_topic_statistics member_function_with_topic_statistics.cpp)
 ament_target_dependencies(subscriber_member_function_with_topic_statistics rclcpp std_msgs)
