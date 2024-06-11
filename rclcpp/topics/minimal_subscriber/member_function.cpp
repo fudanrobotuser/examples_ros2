@@ -57,9 +57,9 @@ private:
     size_t num_points = msg->points.size();
     size_t num_joints = msg->joint_names.size();
 
-    std::vector<std::vector<double>> angles(num_points, std::vector<double>(num_joints, 0.0));
+    //std::vector<std::vector<double>> angles(num_points, std::vector<double>(num_joints, 0.0));
 
-    for (size_t i = 0; i < num_points; ++i)
+    for (size_t i = 0; i < num_points; i++)
     {
       memset(&new_ref, 0, sizeof(new_ref));
       for (size_t j = 0; j < num_joints; j++)
@@ -69,9 +69,9 @@ private:
           std::string name = joint_names[i2];
           if (name.compare(msg->joint_names[j].c_str()) == 0)
           {
-            angles[i][i2] = msg->points[i].positions[i2];
-            new_ref.motor_ref[i2].target_postion = angles[i][i2];
-            fprintf(stderr, "a %d : %d , ", j, angles[i][i2]);
+            // angles[i][i2] = msg->points[i].positions[i2];
+            new_ref.motor_ref[i2].target_postion = static_cast<int>(std::floor(msg->points[i].positions[i2]));
+            fprintf(stderr, "a %d : %d , ", j, new_ref.motor_ref[i2].target_postion);
             break;
           }
         }
@@ -86,7 +86,7 @@ private:
     auto message = sensor_msgs::msg::JointState();
     message.header.stamp = this->now();
     message.name = joint_names;
-    message.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8", "joint9", "joint10", "joint11", "joint12", "joint13", "joint14", "joint15"};
+    // message.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8", "joint9", "joint10", "joint11", "joint12", "joint13", "joint14", "joint15"};
     message.position.resize(message.name.size());
     message.effort.resize(message.name.size());
     message.velocity.resize(message.name.size());
@@ -94,7 +94,7 @@ private:
     auto message2 = sensor_msgs::msg::JointState();
     message2.header.stamp = this->now();
     message2.name = joint_names;
-    message2.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8", "joint9", "joint10", "joint11", "joint12", "joint13", "joint14", "joint15"};
+    // message2.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8", "joint9", "joint10", "joint11", "joint12", "joint13", "joint14", "joint15"};
     message2.position.resize(message.name.size());
 
     memset(&feedback, 0, sizeof(feedback));
