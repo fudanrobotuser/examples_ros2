@@ -97,6 +97,7 @@ private:
     message2.name = joint_names;
     // message2.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8", "joint9", "joint10", "joint11", "joint12", "joint13", "joint14", "joint15"};
     message2.position.resize(message.name.size());
+    message2.effort.resize(message.name.size());
 
     memset(&feedback, 0, sizeof(feedback));
     bool dataOk = edb_pull_fdbk(&feedback);
@@ -110,6 +111,7 @@ private:
         message.velocity[i] = feedback.motor_fdbk[i].feedbk_speed;
 
         message2.position[i] = feedback.motor_fdbk[i].target_position;
+        message2.effort[i] = feedback.motor_fdbk[i].target_torque_offset;
       }
     }
     publisher_->publish(message);
