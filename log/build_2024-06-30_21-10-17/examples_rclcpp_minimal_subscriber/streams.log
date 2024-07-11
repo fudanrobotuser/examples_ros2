@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber -- -j10 -l10
+[0.116s] [  8%] Built target static_wait_set_subscriber
+[0.119s] [ 24%] Built target subscriber_lambda
+[0.119s] [ 24%] Built target wait_set_subscriber
+[0.120s] [ 32%] Built target subscriber_not_composable
+[0.120s] [ 48%] Built target wait_set_subscriber_library
+[0.120s] [ 56%] Built target subscriber_member_function_with_type_adapter
+[0.122s] [ 68%] Built target subscriber_member_function
+[0.123s] [ 76%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[0.128s] [ 84%] Built target subscriber_content_filtering
+[0.128s] [ 92%] Built target subscriber_member_function_with_topic_statistics
+[0.146s] [100%] Built target time_triggered_wait_set_subscriber
+[0.156s] Invoked command in '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber -- -j10 -l10
+[0.218s] Invoking command in '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber
+[0.226s] -- Install configuration: ""
+[0.227s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[0.228s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[0.229s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[0.230s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[0.231s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[0.231s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[0.232s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[0.233s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[0.233s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[0.234s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[0.235s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[0.235s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[0.235s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[0.235s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[0.235s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[0.236s] -- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[0.236s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[0.237s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[0.237s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[0.237s] -- Up-to-date: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[0.239s] Invoked command in '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber

@@ -1,0 +1,392 @@
+[0.000000] (-) TimerEvent: {}
+[0.000180] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.000338] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.000580] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.000741] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.000878] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.000931] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.001007] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.001051] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.001102] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.001155] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.001245] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.001272] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.001317] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.001343] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.001376] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.001443] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.001502] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.001527] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.001552] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.001576] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.001602] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.001664] (examples_rclcpp_minimal_subscriber) JobQueued: {'identifier': 'examples_rclcpp_minimal_subscriber', 'dependencies': OrderedDict()}
+[0.001748] (examples_rclcpp_minimal_subscriber) JobStarted: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.007042] (examples_rclcpp_minimal_subscriber) JobProgress: {'identifier': 'examples_rclcpp_minimal_subscriber', 'progress': 'cmake'}
+[0.007240] (examples_rclcpp_minimal_subscriber) Command: {'cmd': ['/usr/bin/cmake', '/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber', '-DCMAKE_INSTALL_PREFIX=/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber'], 'cwd': '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fudanrobotuser'), ('SSH_CLIENT', '192.168.50.54 58183 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fudanrobotuser'), ('OLDPWD', '/home/fudanrobotuser/examples_ros2/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fudanrobotuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fudanrobotuser/node/node-v20.15.0-linux-x64/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.54 58183 192.168.50.89 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099779] (-) TimerEvent: {}
+[0.150899] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199880] (-) TimerEvent: {}
+[0.262322] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.273141] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299986] (-) TimerEvent: {}
+[0.342263] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.351162] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.351654] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.352147] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.355206] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400090] (-) TimerEvent: {}
+[0.429429] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.437160] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.437411] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.437765] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.439971] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500182] (-) TimerEvent: {}
+[0.562535] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600274] (-) TimerEvent: {}
+[0.649427] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.692310] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.697155] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.700340] (-) TimerEvent: {}
+[0.707286] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.721134] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.739337] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800428] (-) TimerEvent: {}
+[0.807103] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.810040] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.898651] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.900512] (-) TimerEvent: {}
+[0.917017] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.949808] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.959804] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000610] (-) TimerEvent: {}
+[1.033740] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.034206] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.098630] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.099563] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100687] (-) TimerEvent: {}
+[1.200907] (-) TimerEvent: {}
+[1.234721] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[1.300994] (-) TimerEvent: {}
+[1.341207] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.401074] (-) TimerEvent: {}
+[1.411876] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.9 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.475754] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.501172] (-) TimerEvent: {}
+[1.545255] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.552413] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.554847] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.554951] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.561714] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.561837] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.564814] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.572664] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.572775] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.573934] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.575114] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.601252] (-) TimerEvent: {}
+[1.605640] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Generating done\n'}
+[1.607440] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Build files have been written to: /home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber\n'}
+[1.614634] (examples_rclcpp_minimal_subscriber) CommandEnded: {'returncode': 0}
+[1.615179] (examples_rclcpp_minimal_subscriber) JobProgress: {'identifier': 'examples_rclcpp_minimal_subscriber', 'progress': 'build'}
+[1.616177] (examples_rclcpp_minimal_subscriber) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber', '--', '-j10', '-l10'], 'cwd': '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fudanrobotuser'), ('SSH_CLIENT', '192.168.50.54 58183 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fudanrobotuser'), ('OLDPWD', '/home/fudanrobotuser/examples_ros2/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fudanrobotuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fudanrobotuser/node/node-v20.15.0-linux-x64/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.54 58183 192.168.50.89 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.666257] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_member_function_with_topic_statistics.dir/member_function_with_topic_statistics.cpp.o\x1b[0m\n'}
+[1.667848] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_member_function_with_type_adapter.dir/member_function_with_type_adapter.cpp.o\x1b[0m\n'}
+[1.668125] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_not_composable.dir/not_composable.cpp.o\x1b[0m\n'}
+[1.668277] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_member_function_with_unique_network_flow_endpoints.dir/member_function_with_unique_network_flow_endpoints.cpp.o\x1b[0m\n'}
+[1.668868] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_content_filtering.dir/content_filtering.cpp.o\x1b[0m\n'}
+[1.668957] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_lambda.dir/lambda.cpp.o\x1b[0m\n'}
+[1.671498] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/subscriber_member_function.dir/ecat_data_buffer.c.o\x1b[0m\n'}
+[1.674295] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/static_wait_set_subscriber.dir/rclcpp_components/node_main_static_wait_set_subscriber.cpp.o\x1b[0m\n'}
+[1.677045] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/wait_set_subscriber.cpp.o\x1b[0m\n'}
+[1.680225] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/wait_set_subscriber.dir/rclcpp_components/node_main_wait_set_subscriber.cpp.o\x1b[0m\n'}
+[1.701364] (-) TimerEvent: {}
+[1.733927] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/ecat_data_buffer.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kedb_init\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.734539] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/ecat_data_buffer.c:31:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[1.734669] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'   31 |          if(buf_size\x1b[01;35m\x1b[K<\x1b[m\x1b[K sizeof(ECAT_BUF_SHM_STRU))\n'}
+[1.734766] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.759972] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/subscriber_member_function.dir/member_function.cpp.o\x1b[0m\n'}
+[1.801475] (-) TimerEvent: {}
+[1.901777] (-) TimerEvent: {}
+[2.002054] (-) TimerEvent: {}
+[2.102353] (-) TimerEvent: {}
+[2.202589] (-) TimerEvent: {}
+[2.302826] (-) TimerEvent: {}
+[2.403082] (-) TimerEvent: {}
+[2.503445] (-) TimerEvent: {}
+[2.603761] (-) TimerEvent: {}
+[2.704122] (-) TimerEvent: {}
+[2.804473] (-) TimerEvent: {}
+[2.904813] (-) TimerEvent: {}
+[3.005169] (-) TimerEvent: {}
+[3.105535] (-) TimerEvent: {}
+[3.205886] (-) TimerEvent: {}
+[3.306290] (-) TimerEvent: {}
+[3.406634] (-) TimerEvent: {}
+[3.506986] (-) TimerEvent: {}
+[3.607343] (-) TimerEvent: {}
+[3.707724] (-) TimerEvent: {}
+[3.808130] (-) TimerEvent: {}
+[3.908514] (-) TimerEvent: {}
+[4.008915] (-) TimerEvent: {}
+[4.109293] (-) TimerEvent: {}
+[4.209667] (-) TimerEvent: {}
+[4.310106] (-) TimerEvent: {}
+[4.410509] (-) TimerEvent: {}
+[4.510902] (-) TimerEvent: {}
+[4.611303] (-) TimerEvent: {}
+[4.711718] (-) TimerEvent: {}
+[4.812135] (-) TimerEvent: {}
+[4.912484] (-) TimerEvent: {}
+[5.012890] (-) TimerEvent: {}
+[5.062803] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX executable static_wait_set_subscriber\x1b[0m\n'}
+[5.113021] (-) TimerEvent: {}
+[5.213395] (-) TimerEvent: {}
+[5.313792] (-) TimerEvent: {}
+[5.414180] (-) TimerEvent: {}
+[5.426810] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 48%] Built target static_wait_set_subscriber\n'}
+[5.514302] (-) TimerEvent: {}
+[5.570940] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/time_triggered_wait_set_subscriber.dir/rclcpp_components/node_main_time_triggered_wait_set_subscriber.cpp.o\x1b[0m\n'}
+[5.614419] (-) TimerEvent: {}
+[5.714793] (-) TimerEvent: {}
+[5.815166] (-) TimerEvent: {}
+[5.915545] (-) TimerEvent: {}
+[6.015969] (-) TimerEvent: {}
+[6.016294] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.016494] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:67:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[6.016623] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'   67 |         for (int i2 = 0; \x1b[01;35m\x1b[Ki2 < num_joints\x1b[m\x1b[K; i2++)\n'}
+[6.016730] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.017414] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:74:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 3 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[6.017650] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'   74 |             fprintf(stderr, "a \x1b[01;35m\x1b[K%d\x1b[m\x1b[K : %d , ", \x1b[32m\x1b[Kj\x1b[m\x1b[K, new_ref.motor_ref[i2].target_postion);\n'}
+[6.017856] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K~^\x1b[m\x1b[K           \x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[6.018044] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K|\x1b[m\x1b[K           \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[6.018263] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[Kint\x1b[m\x1b[K         \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[6.018451] (examples_rclcpp_minimal_subscriber) StderrLine: {'line': b'      |                                \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[6.116095] (-) TimerEvent: {}
+[6.216454] (-) TimerEvent: {}
+[6.316801] (-) TimerEvent: {}
+[6.417158] (-) TimerEvent: {}
+[6.517519] (-) TimerEvent: {}
+[6.617919] (-) TimerEvent: {}
+[6.718329] (-) TimerEvent: {}
+[6.818742] (-) TimerEvent: {}
+[6.919119] (-) TimerEvent: {}
+[7.019492] (-) TimerEvent: {}
+[7.119868] (-) TimerEvent: {}
+[7.220266] (-) TimerEvent: {}
+[7.320672] (-) TimerEvent: {}
+[7.421056] (-) TimerEvent: {}
+[7.521474] (-) TimerEvent: {}
+[7.621873] (-) TimerEvent: {}
+[7.722288] (-) TimerEvent: {}
+[7.822697] (-) TimerEvent: {}
+[7.923080] (-) TimerEvent: {}
+[8.023475] (-) TimerEvent: {}
+[8.123895] (-) TimerEvent: {}
+[8.151111] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable wait_set_subscriber\x1b[0m\n'}
+[8.224034] (-) TimerEvent: {}
+[8.324462] (-) TimerEvent: {}
+[8.424936] (-) TimerEvent: {}
+[8.447795] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 56%] Built target wait_set_subscriber\n'}
+[8.506834] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/static_wait_set_subscriber.cpp.o\x1b[0m\n'}
+[8.525064] (-) TimerEvent: {}
+[8.625434] (-) TimerEvent: {}
+[8.725791] (-) TimerEvent: {}
+[8.826330] (-) TimerEvent: {}
+[8.926767] (-) TimerEvent: {}
+[9.027160] (-) TimerEvent: {}
+[9.127551] (-) TimerEvent: {}
+[9.227966] (-) TimerEvent: {}
+[9.328403] (-) TimerEvent: {}
+[9.428837] (-) TimerEvent: {}
+[9.529250] (-) TimerEvent: {}
+[9.629677] (-) TimerEvent: {}
+[9.730156] (-) TimerEvent: {}
+[9.830604] (-) TimerEvent: {}
+[9.931051] (-) TimerEvent: {}
+[10.031493] (-) TimerEvent: {}
+[10.131923] (-) TimerEvent: {}
+[10.232330] (-) TimerEvent: {}
+[10.332752] (-) TimerEvent: {}
+[10.433170] (-) TimerEvent: {}
+[10.533573] (-) TimerEvent: {}
+[10.582139] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable time_triggered_wait_set_subscriber\x1b[0m\n'}
+[10.633698] (-) TimerEvent: {}
+[10.734065] (-) TimerEvent: {}
+[10.834414] (-) TimerEvent: {}
+[10.875542] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 64%] Built target time_triggered_wait_set_subscriber\n'}
+[10.920397] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/wait_set_subscriber_library.dir/time_triggered_wait_set_subscriber.cpp.o\x1b[0m\n'}
+[10.934543] (-) TimerEvent: {}
+[11.034978] (-) TimerEvent: {}
+[11.135427] (-) TimerEvent: {}
+[11.235816] (-) TimerEvent: {}
+[11.336154] (-) TimerEvent: {}
+[11.436489] (-) TimerEvent: {}
+[11.536824] (-) TimerEvent: {}
+[11.637169] (-) TimerEvent: {}
+[11.737544] (-) TimerEvent: {}
+[11.837921] (-) TimerEvent: {}
+[11.938291] (-) TimerEvent: {}
+[12.038635] (-) TimerEvent: {}
+[12.138995] (-) TimerEvent: {}
+[12.239388] (-) TimerEvent: {}
+[12.339741] (-) TimerEvent: {}
+[12.440089] (-) TimerEvent: {}
+[12.540483] (-) TimerEvent: {}
+[12.640867] (-) TimerEvent: {}
+[12.741261] (-) TimerEvent: {}
+[12.841681] (-) TimerEvent: {}
+[12.942106] (-) TimerEvent: {}
+[13.042494] (-) TimerEvent: {}
+[13.142882] (-) TimerEvent: {}
+[13.243268] (-) TimerEvent: {}
+[13.343682] (-) TimerEvent: {}
+[13.444073] (-) TimerEvent: {}
+[13.544462] (-) TimerEvent: {}
+[13.644853] (-) TimerEvent: {}
+[13.745197] (-) TimerEvent: {}
+[13.845604] (-) TimerEvent: {}
+[13.945990] (-) TimerEvent: {}
+[14.046414] (-) TimerEvent: {}
+[14.146796] (-) TimerEvent: {}
+[14.247175] (-) TimerEvent: {}
+[14.347566] (-) TimerEvent: {}
+[14.447956] (-) TimerEvent: {}
+[14.519457] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX executable subscriber_not_composable\x1b[0m\n'}
+[14.548066] (-) TimerEvent: {}
+[14.648358] (-) TimerEvent: {}
+[14.708855] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable subscriber_lambda\x1b[0m\n'}
+[14.748469] (-) TimerEvent: {}
+[14.848788] (-) TimerEvent: {}
+[14.949134] (-) TimerEvent: {}
+[15.049559] (-) TimerEvent: {}
+[15.149963] (-) TimerEvent: {}
+[15.250321] (-) TimerEvent: {}
+[15.276858] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 76%] Built target subscriber_lambda\n'}
+[15.278659] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 76%] Built target subscriber_not_composable\n'}
+[15.350450] (-) TimerEvent: {}
+[15.449389] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable subscriber_member_function_with_unique_network_flow_endpoints\x1b[0m\n'}
+[15.450543] (-) TimerEvent: {}
+[15.550885] (-) TimerEvent: {}
+[15.651284] (-) TimerEvent: {}
+[15.751698] (-) TimerEvent: {}
+[15.852015] (-) TimerEvent: {}
+[15.940489] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable subscriber_member_function\x1b[0m\n'}
+[15.952134] (-) TimerEvent: {}
+[15.975955] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 84%] Built target subscriber_member_function_with_unique_network_flow_endpoints\n'}
+[16.026390] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable subscriber_content_filtering\x1b[0m\n'}
+[16.052317] (-) TimerEvent: {}
+[16.152701] (-) TimerEvent: {}
+[16.253214] (-) TimerEvent: {}
+[16.353598] (-) TimerEvent: {}
+[16.426148] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable subscriber_member_function_with_topic_statistics\x1b[0m\n'}
+[16.453725] (-) TimerEvent: {}
+[16.503748] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 92%] Built target subscriber_content_filtering\n'}
+[16.553859] (-) TimerEvent: {}
+[16.589926] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 92%] Built target subscriber_member_function\n'}
+[16.654008] (-) TimerEvent: {}
+[16.754416] (-) TimerEvent: {}
+[16.763647] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 92%] Built target subscriber_member_function_with_topic_statistics\n'}
+[16.854526] (-) TimerEvent: {}
+[16.954833] (-) TimerEvent: {}
+[17.055132] (-) TimerEvent: {}
+[17.094997] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable subscriber_member_function_with_type_adapter\x1b[0m\n'}
+[17.155243] (-) TimerEvent: {}
+[17.255556] (-) TimerEvent: {}
+[17.355876] (-) TimerEvent: {}
+[17.456194] (-) TimerEvent: {}
+[17.556480] (-) TimerEvent: {}
+[17.616861] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[ 96%] Built target subscriber_member_function_with_type_adapter\n'}
+[17.656572] (-) TimerEvent: {}
+[17.756832] (-) TimerEvent: {}
+[17.857074] (-) TimerEvent: {}
+[17.957285] (-) TimerEvent: {}
+[18.057519] (-) TimerEvent: {}
+[18.157736] (-) TimerEvent: {}
+[18.257957] (-) TimerEvent: {}
+[18.358236] (-) TimerEvent: {}
+[18.458484] (-) TimerEvent: {}
+[18.558731] (-) TimerEvent: {}
+[18.658969] (-) TimerEvent: {}
+[18.759182] (-) TimerEvent: {}
+[18.859405] (-) TimerEvent: {}
+[18.959617] (-) TimerEvent: {}
+[19.059855] (-) TimerEvent: {}
+[19.160127] (-) TimerEvent: {}
+[19.260365] (-) TimerEvent: {}
+[19.360589] (-) TimerEvent: {}
+[19.460821] (-) TimerEvent: {}
+[19.561099] (-) TimerEvent: {}
+[19.661363] (-) TimerEvent: {}
+[19.761582] (-) TimerEvent: {}
+[19.861780] (-) TimerEvent: {}
+[19.961961] (-) TimerEvent: {}
+[20.062149] (-) TimerEvent: {}
+[20.162340] (-) TimerEvent: {}
+[20.262530] (-) TimerEvent: {}
+[20.362744] (-) TimerEvent: {}
+[20.462965] (-) TimerEvent: {}
+[20.563207] (-) TimerEvent: {}
+[20.663421] (-) TimerEvent: {}
+[20.763623] (-) TimerEvent: {}
+[20.863841] (-) TimerEvent: {}
+[20.964031] (-) TimerEvent: {}
+[21.064244] (-) TimerEvent: {}
+[21.164446] (-) TimerEvent: {}
+[21.264670] (-) TimerEvent: {}
+[21.342814] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libwait_set_subscriber_library.so\x1b[0m\n'}
+[21.364747] (-) TimerEvent: {}
+[21.464993] (-) TimerEvent: {}
+[21.565260] (-) TimerEvent: {}
+[21.665506] (-) TimerEvent: {}
+[21.765702] (-) TimerEvent: {}
+[21.865901] (-) TimerEvent: {}
+[21.966128] (-) TimerEvent: {}
+[21.984892] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'[100%] Built target wait_set_subscriber_library\n'}
+[22.043496] (examples_rclcpp_minimal_subscriber) CommandEnded: {'returncode': 0}
+[22.066214] (-) TimerEvent: {}
+[22.098264] (examples_rclcpp_minimal_subscriber) JobProgress: {'identifier': 'examples_rclcpp_minimal_subscriber', 'progress': 'install'}
+[22.107119] (examples_rclcpp_minimal_subscriber) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber'], 'cwd': '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fudanrobotuser'), ('SSH_CLIENT', '192.168.50.54 58183 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fudanrobotuser'), ('OLDPWD', '/home/fudanrobotuser/examples_ros2/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fudanrobotuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fudanrobotuser/node/node-v20.15.0-linux-x64/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.54 58183 192.168.50.89 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.115291] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.115499] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber\n'}
+[22.116365] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber" to ""\n'}
+[22.116442] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber\n'}
+[22.117089] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber" to ""\n'}
+[22.117165] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber\n'}
+[22.117804] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber" to ""\n'}
+[22.117877] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so\n'}
+[22.129903] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so" to ""\n'}
+[22.129985] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda\n'}
+[22.135059] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda" to ""\n'}
+[22.135130] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function\n'}
+[22.140689] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function" to ""\n'}
+[22.140779] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics\n'}
+[22.145742] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics" to ""\n'}
+[22.145833] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter\n'}
+[22.150324] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter" to ""\n'}
+[22.150527] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints\n'}
+[22.153516] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints" to ""\n'}
+[22.153641] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable\n'}
+[22.156673] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable" to ""\n'}
+[22.156791] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering\n'}
+[22.159835] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering" to ""\n'}
+[22.159949] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber\n'}
+[22.160059] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber\n'}
+[22.160187] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh\n'}
+[22.160294] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv\n'}
+[22.160395] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh\n'}
+[22.160509] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv\n'}
+[22.160605] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash\n'}
+[22.160703] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh\n'}
+[22.160817] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh\n'}
+[22.160912] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv\n'}
+[22.160995] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv\n'}
+[22.161092] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber\n'}
+[22.161211] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber\n'}
+[22.161311] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake\n'}
+[22.161392] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake\n'}
+[22.161473] (examples_rclcpp_minimal_subscriber) StdoutLine: {'line': b'-- Installing: /home/fudanrobotuser/examples_ros2/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml\n'}
+[22.162864] (examples_rclcpp_minimal_subscriber) CommandEnded: {'returncode': 0}
+[22.166290] (-) TimerEvent: {}
+[22.228014] (examples_rclcpp_minimal_subscriber) JobEnded: {'identifier': 'examples_rclcpp_minimal_subscriber', 'rc': 0}
+[22.228545] (-) EventReactorShutdown: {}

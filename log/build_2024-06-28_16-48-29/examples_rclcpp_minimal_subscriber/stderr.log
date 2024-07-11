@@ -1,0 +1,14 @@
+[01m[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/ecat_data_buffer.c:[m[K In function ‘[01m[Kedb_init[m[K’:
+[01m[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/ecat_data_buffer.c:31:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+   31 |          if(buf_size[01;35m[K<[m[K sizeof(ECAT_BUF_SHM_STRU))
+      |                     [01;35m[K^[m[K
+[01m[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(trajectory_msgs::msg::JointTrajectory_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:67:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   67 |         for (int i2 = 0; [01;35m[Ki2 < num_joints[m[K; i2++)
+      |                          [01;35m[K~~~^~~~~~~~~~~~[m[K
+[01m[K/home/fudanrobotuser/examples_ros2/src/examples/rclcpp/topics/minimal_subscriber/member_function.cpp:74:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 3 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   74 |             fprintf(stderr, "a [01;35m[K%d[m[K : %d , ", [32m[Kj[m[K, new_ref.motor_ref[i2].target_postion);
+      |                                [01;35m[K~^[m[K           [32m[K~[m[K
+      |                                 [01;35m[K|[m[K           [32m[K|[m[K
+      |                                 [01;35m[Kint[m[K         [32m[Ksize_t {aka long unsigned int}[m[K
+      |                                [32m[K%ld[m[K
