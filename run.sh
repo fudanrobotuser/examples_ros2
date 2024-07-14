@@ -1,0 +1,1 @@
+/home/fudanrobotuser/examples_ros2/build/examples_rclcpp_minimal_subscriber/subscriber_member_function

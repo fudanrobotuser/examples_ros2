@@ -26,13 +26,13 @@
 #include <trajectory_msgs/msg/joint_trajectory.hpp>
 #include <sensor_msgs/msg/joint_state.hpp>
 
-#define SHM_KEY 12345
-#define SHM_SIZE (1024 * 1024 * 2)
 
-#define P_START 0
-#define P_END 5
 
-std::vector<std::string> joint_names = {"M1L", "M2L", "M3L", "M4L", "M5L", "M6L", "M1R", "M2R", "M3R", "M4R", "M5R", "M6R"};
+// std::vector<std::string> joint_names = {"M1L", "M2L", "M3L", "M4L", "M5L", "M6L", "M1R", "M2R", "M3R", "M4R", "M5R", "M6R"};
+
+std::vector<std::string> joint_names = {"joint_1","joint_2","joint_3","joint_4","joint_5","joint_6","joint_7","joint_8","joint_9","joint_10","joint_11","joint_12","joint_13","joint_14"};
+
+
 
 using std::placeholders::_1;
 
@@ -47,11 +47,15 @@ public:
         "/trajectory_controller/joint_trajectory", 1,
         std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1));
 
+    subscription2_ = this->create_subscription<trajectory_msgs::msg::JointTrajectory>(
+        "/trajectory_controller/joint_trajectory2", 1,
+        std::bind(&MinimalSubscriber::topic_callback2, this, std::placeholders::_1));
+
     publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 1);
     publisher_2 = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states_target", 1);
 
     timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(8), std::bind(&MinimalSubscriber::timer_callback, this));
+        std::chrono::milliseconds(2), std::bind(&MinimalSubscriber::timer_callback, this));
   }
 
 private:
@@ -60,7 +64,7 @@ private:
     size_t num_points = msg->points.size();
     size_t num_joints = msg->joint_names.size();
 
-    //std::vector<std::vector<double>> angles(num_points, std::vector<double>(num_joints, 0.0));
+    // std::vector<std::vector<double>> angles(num_points, std::vector<double>(num_joints, 0.0));
 
     for (size_t i = 0; i < num_points; i++)
     {
@@ -73,17 +77,49 @@ private:
           if (name.compare(msg->joint_names[j].c_str()) == 0)
           {
             // angles[i][i2] = msg->points[i].positions[i2];
-            new_ref.motor_ref[i2 + 4].target_postion = static_cast<int>(std::floor(msg->points[i].positions[i2]));
-            fprintf(stderr, "a %d : %d , ", j, new_ref.motor_ref[i2].target_postion);
+            new_ref.motor_ref[i2 + P_START].target_postion = static_cast<int>(std::floor(msg->points[i].positions[i2]));
+            // fprintf(stderr, "a %d : %d , ", j, new_ref.motor_ref[i2].target_postion);
             break;
           }
         }
       }
       bool dataOk = edb_push_ref(&new_ref);
-      fprintf(stderr, "dataOk %d , line: %ld \n ", dataOk, i);
+      if (!dataOk)
+      {
+        fprintf(stderr, "dataOk %d , line: %ld \n ", dataOk, i);
+      }
     }
   }
-  
+
+  void topic_callback2(const trajectory_msgs::msg::JointTrajectory::SharedPtr msg)
+  {
+    size_t num_points = msg->points.size();
+    size_t num_joints = msg->joint_names.size();
+
+    // std::vector<std::vector<double>> angles(num_points, std::vector<double>(num_joints, 0.0));
+
+    for (size_t i = 0; i < num_points; i++)
+    {
+      memset(&new_ref, 0, sizeof(new_ref));
+      for (size_t j = 0; j < num_joints; j++)
+      {
+        for (int i2 = 0; i2 < num_joints; i2++)
+        {
+          std::string name = joint_names[i2];
+          if (name.compare(msg->joint_names[j].c_str()) == 0)
+          {
+            new_ref.motor_ref[i2 + P_START].default_position = static_cast<int>(std::floor(msg->points[i].positions[i2]));
+            break;
+          }
+        }
+      }
+      bool dataOk = edb_push_ref(&new_ref);
+      if (!dataOk)
+      {
+        fprintf(stderr, "dataOk %d , line: %ld \n ", dataOk, i);
+      }
+    }
+  }
 
   void timer_callback()
   {
@@ -107,12 +143,12 @@ private:
     {
       for (size_t i = 0; i < message.name.size(); ++i)
       {
-        message.position[i] = feedback.motor_fdbk[i+4].feedbk_postion;
-        message.effort[i] = feedback.motor_fdbk[i+4].feedbk_torque;
-        message.velocity[i] = feedback.motor_fdbk[i+4].feedbk_speed;
+        message.position[i] = feedback.motor_fdbk[i + P_START].feedbk_postion;
+        message.effort[i] = feedback.motor_fdbk[i + P_START].feedbk_torque;
+        message.velocity[i] = feedback.motor_fdbk[i + P_START].feedbk_speed;
 
-        message2.position[i] = feedback.motor_fdbk[i+4].target_position;
-        message2.effort[i] = feedback.motor_fdbk[i+4].target_torque_offset;
+        message2.position[i] = feedback.motor_fdbk[i + P_START].target_position;
+        message2.effort[i] = feedback.motor_fdbk[i + P_START].target_torque_offset;
       }
     }
     publisher_->publish(message);
@@ -120,6 +156,7 @@ private:
   }
 
   rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr subscription_;
+  rclcpp::Subscription<trajectory_msgs::msg::JointTrajectory>::SharedPtr subscription2_;
   rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_;
   rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_2;
   rclcpp::TimerBase::SharedPtr timer_;
@@ -130,23 +167,23 @@ private:
 int main(int argc, char *argv[])
 {
 
-    // Get the shared memory segment
-    int shmid = shmget(SHM_KEY, SHM_SIZE, 0666);
-    if (shmid == -1)
-    {
-        perror("shmget");
-        return EXIT_FAILURE;
-    }
+  // Get the shared memory segment
+  int shmid = shmget(SHM_KEY, SHM_SIZE, 0666);
+  if (shmid == -1)
+  {
+    perror("shmget");
+    return EXIT_FAILURE;
+  }
 
-    void *appPtr;
+  void *appPtr;
 
-    appPtr = shmat(shmid, 0, 0);
-    if (appPtr == (void *)-1)
-    {
-        return -1;
-    }
+  appPtr = shmat(shmid, 0, 0);
+  if (appPtr == (void *)-1)
+  {
+    return -1;
+  }
 
-    edb_init(appPtr, SHM_SIZE, false);
+  edb_init(appPtr, SHM_SIZE, false);
 
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<MinimalSubscriber>());
